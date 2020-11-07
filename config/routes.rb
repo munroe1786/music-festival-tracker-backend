@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
 
-  
-  resources :highlights
+
   # I want my api to be musicfestivaltracker.com/api/vi/resource
   namespace :api do
     namespace :v1 do
       resources :comments
+      resources :highlights
       resources :locations
       resources :users
     end
